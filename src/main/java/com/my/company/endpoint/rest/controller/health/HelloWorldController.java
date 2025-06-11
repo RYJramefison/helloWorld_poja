@@ -7,10 +7,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.my.company.service.HelloWorldService;
+
 @PojaGenerated
 @RestController
 @AllArgsConstructor
 public class HelloWorldController {
+    private final HelloWorldService service;
 
     public static final ResponseEntity<String> OK = new ResponseEntity<>("OK", HttpStatus.OK);
     public static final ResponseEntity<String> KO =
@@ -18,6 +21,6 @@ public class HelloWorldController {
 
     @GetMapping("/hello")
     public String helloWorld() {
-        return "... world!";
+        return service.uploadHelloWorldMessage(name);
     }
 }
