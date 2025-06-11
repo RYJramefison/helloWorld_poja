@@ -1,0 +1,44 @@
+[33mcommit ab3dee268465e89d8f800cab68e54496eb1935d5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mpreprod[m[33m, [m[1;31morigin/preprod[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: juninho <hei.juninho.2@gmail.com>
+Date:   Wed Jun 11 16:40:39 2025 +0300
+
+    fix: hello world method
+
+[33mcommit 9dd6cbaaae1b62bbf3fd0578483a08e3956fc653[m
+Author: juninho <hei.juninho.2@gmail.com>
+Date:   Wed Jun 11 16:37:29 2025 +0300
+
+    fix: replace hello world method
+
+[33mcommit 70f92d482be9388957d8e72113c538ebfda1359e[m
+Merge: 67b0435 91bc6b7
+Author: Yarinaly Juninho RAMEFISON <154550933+RYJramefison@users.noreply.github.com>
+Date:   Wed Jun 11 16:29:22 2025 +0300
+
+    Merge pull request #1 from RYJramefison/prod
+    
+    merge preprod to prod
+
+[33mcommit 91bc6b7e3a994e8e3d3e0de0c1d1c0f55f919393[m[33m ([m[1;31morigin/prod[m[33m)[m
+Author: poja[bot] <bot@poja.io>
+Date:   Wed Jun 11 13:18:45 2025 +0000
+
+    poja: deployment ID: 1a8f0642-21d9-4484-bd32-cca9b1f06051
+
+[33mcommit 67b0435e9665a1b2ac28886bbb322a442bf8471b[m
+Author: Yarinaly Juninho RAMEFISON <154550933+RYJramefison@users.noreply.github.com>
+Date:   Wed Jun 11 16:11:11 2025 +0300
+
+    feat: add helloWorld method on endpoint
+
+[33mcommit 2f6b17567a22f7aee55b1c35955d9eff27562c94[m
+Author: poja[bot] <bot@poja.io>
+Date:   Wed Jun 11 12:52:38 2025 +0000
+
+    poja: deployment ID: a3ae1c17-6205-4a1f-a388-f7ec42cde0f5
+
+[33mcommit bbb848f10a4884ad8fa9a8ed5712cc5af4b170a7[m
+Author: jcloudify-app[bot] <184205914+jcloudify-app[bot]@users.noreply.github.com>
+Date:   Wed Jun 11 12:52:13 2025 +0000
+
+    Initial commit
