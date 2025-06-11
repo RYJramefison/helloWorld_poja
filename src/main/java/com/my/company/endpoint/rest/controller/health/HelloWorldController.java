@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @PojaGenerated
 @RestController
 @AllArgsConstructor
-@RestController
 public class HelloWorldController {
 
     public static final ResponseEntity<String> OK = new ResponseEntity<>("OK", HttpStatus.OK);
