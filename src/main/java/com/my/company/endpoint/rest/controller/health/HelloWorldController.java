@@ -1,8 +1,8 @@
 package com.my.company.endpoint.rest.controller.health;
 
-import com.my.company.service.HelloWorldService;
 import com.my.company.mail.Email;
 import com.my.company.mail.Mailer;
+import com.my.company.service.HelloWorldService;
 import jakarta.mail.internet.InternetAddress;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -27,7 +27,8 @@ public class HelloWorldController {
   @SneakyThrows
   public String helloWorld(@RequestParam String to) {
     var email =
-            new Email(new InternetAddress(to), List.of(), List.of(), "Hello world", "... world!", List.of());
+        new Email(
+            new InternetAddress(to), List.of(), List.of(), "Hello world", "... world!", List.of());
 
     mailer.accept(email);
     return "... world!";
