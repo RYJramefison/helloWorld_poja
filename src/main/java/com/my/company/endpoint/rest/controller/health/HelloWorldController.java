@@ -1,23 +1,35 @@
 package com.my.company.endpoint.rest.controller.health;
 
 import com.my.company.service.HelloWorldService;
+import com.my.company.mail.Email;
+import com.my.company.mail.Mailer;
+import jakarta.mail.internet.InternetAddress;
+import java.util.List;
 import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-// @PojaGenerated
 @RestController
 @AllArgsConstructor
 public class HelloWorldController {
   private final HelloWorldService service;
 
-  //    public static final ResponseEntity<String> OK = new ResponseEntity<>("OK", HttpStatus.OK);
-  //    public static final ResponseEntity<String> KO =
-  //            new ResponseEntity<>("KO", HttpStatus.INTERNAL_SERVER_ERROR);
+  private final Mailer mailer;
 
   @GetMapping("/hello")
   public String helloWorld(@RequestParam String name) {
     return service.uploadHelloWorldMessage(name);
+  }
+
+  @GetMapping("/helloAsynchrone")
+  @SneakyThrows
+  public String helloWorld(@RequestParam String to) {
+    var email =
+            new Email(new InternetAddress(to), List.of(), List.of(), "Hello world", "... world!", List.of());
+
+    mailer.accept(email);
+    return "... world!";
   }
 }
