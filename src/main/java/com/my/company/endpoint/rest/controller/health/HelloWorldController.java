@@ -25,7 +25,7 @@ public class HelloWorldController {
 
   @GetMapping("/helloAsynchrone")
   @SneakyThrows
-  public String helloWorld(@RequestParam String to) {
+  public String helloWorldAsynchrone(@RequestParam String to) {
     var email =
         new Email(
             new InternetAddress(to), List.of(), List.of(), "Hello world", "... world!", List.of());
